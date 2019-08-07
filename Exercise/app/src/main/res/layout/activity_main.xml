@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/imageview"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="ImageView" />
+
+        <Button
+            android:id="@+id/edittext"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageview"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="EditText" />
+
+        <Button
+            android:id="@+id/bt_random"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edittext"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Random" />
+
+        <Button
+            android:id="@+id/bt_chk"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bt_random"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="CheckBox" />
+
+        <Button
+            android:id="@+id/bt_proBar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bt_chk"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="ProgressBar" />
+
+        <Button
+            android:id="@+id/bt_sk"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bt_proBar"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Race" />
+    </ScrollView>
+</RelativeLayout>
