@@ -1,4 +1,4 @@
-package com.example.bt;
+package com.example.bt.ex;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.example.bt.R;
 
 import java.util.ArrayList;
 

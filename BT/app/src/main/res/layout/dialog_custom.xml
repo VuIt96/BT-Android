@@ -3,18 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#C980A5B8"
     android:layout_height="match_parent"
-    android:layout_margin="24dp"
-    tools:context=".ex.App">
+    tools:context=".ex.DialogCustomActivity">
 
     <TextView
         android:id="@+id/tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="@string/txt_Td"
+        android:text="Đăng Nhập Hệ Thong"
         android:textColor="#F44336"
-        android:textSize="32sp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,7 +24,7 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
-        android:hint="@string/txt_name"
+        android:hint="Nhâp UserName"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,41 +35,33 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
-        android:hint="@string/txt_email"
+        android:hint="Nhập PassWork"
         android:inputType="textWebEmailAddress"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/et_user" />
 
-    <EditText
-        android:id="@+id/et_t3"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
+    <Button
+        android:id="@+id/btDangNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:hint="@string/txt_sdt"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Dang nhap"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/btHuy"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/et_pass" />
 
     <Button
-        android:id="@+id/bt_app"
+        android:id="@+id/btHuy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/custom_button"
-        android:text="@string/bt_xn"
+        android:layout_marginTop="8dp"
+        android:text="Huy"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_t3" />
-
-    <TextView
-        android:id="@+id/tv_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bt_app" />
+        app:layout_constraintStart_toEndOf="@+id/btDangNhap"
+        app:layout_constraintTop_toBottomOf="@id/et_pass" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

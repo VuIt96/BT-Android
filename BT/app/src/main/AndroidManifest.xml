@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DialogActivity"></activity>
-        <activity android:name=".PopupMenuActivity" />
+        <activity android:name=".CalenderActivity"></activity>
+        <activity android:name=".ex.DialogCustomActivity" />
+        <activity android:name=".ex.DialogActivity" />
+        <activity android:name=".ex.PopupMenuActivity" />
         <activity android:name=".ex.MenuDemoActivity" />
         <activity android:name=".ex.DrawbleActivity" />
         <activity android:name=".ex.App" />

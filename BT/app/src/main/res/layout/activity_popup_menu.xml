@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/manhinh"
-    tools:context=".PopupMenuActivity">
+    tools:context=".ex.PopupMenuActivity">
 
     <Button
         android:id="@+id/bt_popMenu"

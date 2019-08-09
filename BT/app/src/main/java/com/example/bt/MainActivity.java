@@ -17,8 +17,11 @@ import com.example.bt.ex.App;
 import com.example.bt.ex.ButtonCustomActivity;
 import com.example.bt.ex.CheckBox;
 import com.example.bt.ex.CheckWF;
+import com.example.bt.ex.DialogActivity;
+import com.example.bt.ex.DialogCustomActivity;
 import com.example.bt.ex.DrawbleActivity;
 import com.example.bt.ex.MenuDemoActivity;
+import com.example.bt.ex.PopupMenuActivity;
 import com.example.bt.ex.ProBars;
 
 public class MainActivity extends AppCompatActivity {
@@ -36,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     Button BT5;
     Button BT6;
     Button mnDemo;
-    Button Popup, btDialog;
+    Button Popup, btDialog, btDialogCT, btCalender;
 
 
     @Override
@@ -156,6 +159,20 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btDialogCT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, DialogCustomActivity.class);
+                startActivity(intent);
+            }
+        });
+        btCalender.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, CalenderActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void callID() {
@@ -174,6 +191,8 @@ public class MainActivity extends AppCompatActivity {
         BT6 = (Button) findViewById(R.id.bai6);
         mnDemo = (Button) findViewById(R.id.menuDemo);
         Popup = (Button) findViewById(R.id.menuPopup);
-        btDialog = (Button)findViewById(R.id.btDialog);
+        btDialog = (Button) findViewById(R.id.btDialog);
+        btDialogCT = (Button) findViewById(R.id.btDialogcustom);
+        btCalender = (Button) findViewById(R.id.btCaleder);
     }
 }

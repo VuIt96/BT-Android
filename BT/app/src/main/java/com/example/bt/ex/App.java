@@ -37,8 +37,8 @@ public class App extends AppCompatActivity {
     }
 
     private void callID() {
-        ed_T1 = (EditText) findViewById(R.id.et_t1);
-        ed_T2 = (EditText) findViewById(R.id.et_t2);
+        ed_T1 = (EditText) findViewById(R.id.et_user);
+        ed_T2 = (EditText) findViewById(R.id.et_pass);
         ed_T3 = (EditText) findViewById(R.id.et_t3);
         bt_XN = (Button) findViewById(R.id.bt_app);
         txt_View = (TextView) findViewById(R.id.tv_view);

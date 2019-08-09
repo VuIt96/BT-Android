@@ -160,4 +160,26 @@
         android:background="@drawable/custom_button"
         android:text="Dialog" />
 
+    <Button
+        android:id="@+id/btDialogcustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btDialog"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/bai1"
+        android:background="@drawable/custom_button"
+        android:text="DlCustom" />
+
+    <Button
+        android:id="@+id/btCaleder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btDialogcustom"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/bai1"
+        android:background="@drawable/custom_button"
+        android:text="Caleder" />
+
 </RelativeLayout>
