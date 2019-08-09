@@ -1,4 +1,4 @@
-package com.example.bt;
+package com.example.bt.ex;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +11,8 @@ import android.widget.RadioButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.bt.R;
 
 import java.util.Random;
 

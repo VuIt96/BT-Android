@@ -9,12 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DrawbleActivity"></activity>
-        <activity android:name=".App" />
+        <activity android:name=".MenuDemoActivity"></activity>
+        <activity android:name=".ex.DrawbleActivity" />
+        <activity android:name=".ex.App" />
         <activity android:name=".ex.ProBars" />
         <activity android:name=".ex.CheckWF" />
         <activity android:name=".GridView.EditText" />
-        <activity android:name=".Run" />
+        <activity android:name=".ex.Run" />
         <activity android:name=".ex.CheckBox" />
         <activity android:name=".ex.ButtonCustomActivity" />
         <activity android:name=".ListView.ImgView" />

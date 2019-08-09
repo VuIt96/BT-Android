@@ -13,9 +13,11 @@ import com.example.bt.GridView.GView2;
 import com.example.bt.GridView.GridView1;
 import com.example.bt.ListView.ImgView;
 import com.example.bt.ListView.ListView1;
+import com.example.bt.ex.App;
 import com.example.bt.ex.ButtonCustomActivity;
 import com.example.bt.ex.CheckBox;
 import com.example.bt.ex.CheckWF;
+import com.example.bt.ex.DrawbleActivity;
 import com.example.bt.ex.ProBars;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     Button BT4;
     Button BT5;
     Button BT6;
+    Button mnDemo;
 
 
     @Override
@@ -77,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         Run.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Run.class);
+                Intent intent = new Intent(MainActivity.this, com.example.bt.ex.Run.class);
                 startActivity(intent);
             }
         });
@@ -130,6 +133,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        mnDemo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MenuDemoActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void callID() {
@@ -146,5 +156,6 @@ public class MainActivity extends AppCompatActivity {
         BT4 = (Button) findViewById(R.id.bai4);
         BT5 = (Button) findViewById(R.id.bai5);
         BT6 = (Button) findViewById(R.id.bai6);
+        mnDemo = (Button) findViewById(R.id.menuDemo);
     }
 }
