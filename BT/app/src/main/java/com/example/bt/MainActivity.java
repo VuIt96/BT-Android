@@ -18,6 +18,7 @@ import com.example.bt.ex.ButtonCustomActivity;
 import com.example.bt.ex.CheckBox;
 import com.example.bt.ex.CheckWF;
 import com.example.bt.ex.DrawbleActivity;
+import com.example.bt.ex.MenuDemoActivity;
 import com.example.bt.ex.ProBars;
 
 public class MainActivity extends AppCompatActivity {
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     Button BT5;
     Button BT6;
     Button mnDemo;
+    Button Popup;
 
 
     @Override
@@ -140,6 +142,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Popup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, PopupMenuActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void callID() {
@@ -157,5 +166,6 @@ public class MainActivity extends AppCompatActivity {
         BT5 = (Button) findViewById(R.id.bai5);
         BT6 = (Button) findViewById(R.id.bai6);
         mnDemo = (Button) findViewById(R.id.menuDemo);
+        Popup = (Button) findViewById(R.id.menuPopup);
     }
 }

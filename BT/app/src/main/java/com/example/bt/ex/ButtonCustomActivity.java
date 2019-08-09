@@ -37,8 +37,14 @@ public class ButtonCustomActivity extends AppCompatActivity {
                     private int countRun;
                     private int runablecount = count;
 
+                    private int countTemp(int total, int delaytimes) {
+                        //return (Math.round(((total / delaytimes)/10)* 1000) / (count * 2));
+                        return (((total / delaytimes)* 100) / (count * 2));
+                    }
+
                     @Override
                     public void run() {
+                        int temp = countTemp(90000, 5000);
                         int customlevel = clipDrawable.getLevel();
 //                        if (customlevel >= 10000) {
 //                            customlevel = 0;
@@ -48,10 +54,9 @@ public class ButtonCustomActivity extends AppCompatActivity {
 //                        Log.d("ButtonCustomActivity ", "r: " + count + " - Run: " + ++countRun);
 //                        //de quy
                         if (customlevel < 10001) {
-                            int temp = 3000/(count*2);
                             ivView.setImageLevel(customlevel + temp);
-                            handler.postDelayed(this,500);
-                            Log.d("ButtonCustomActivity ", "r: " + runablecount + " - Run: " + ++countRun + " custom: " + customlevel  + "temp : "+temp);
+                            handler.postDelayed(this, 500);
+                            Log.d("ButtonCustomActivity ", "r: " + runablecount + " - Run: " + ++countRun + " custom: " + customlevel + "temp : " + temp);
                         }
 
                     }
@@ -70,4 +75,5 @@ public class ButtonCustomActivity extends AppCompatActivity {
             }
         });
     }
+
 }

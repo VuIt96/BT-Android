@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:background="@drawable/custom_button"
-        android:text="Bai 1" />
+        android:text="EditText" />
 
     <Button
         android:id="@+id/bai2"
@@ -20,7 +20,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"
         android:background="@drawable/custom_buttonlayout"
-        android:text="Bai 2"
+        android:text="GridView"
         android:textColor="@drawable/custom_buttonlayout" />
 
     <Button
@@ -31,7 +31,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"
         android:background="@drawable/custom_button"
-        android:text="Bai 3" />
+        android:text="GV-Img" />
 
     <Button
         android:id="@+id/bai4"
@@ -41,7 +41,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"
         android:background="@drawable/custom_button"
-        android:text="Bai 4" />
+        android:text="LV-Cbox" />
 
     <Button
         android:id="@+id/bai5"
@@ -50,7 +50,7 @@
         android:layout_below="@id/bai4"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"
-        android:text="Bai 5" />
+        android:text="Img-Ct" />
 
     <Button
         android:id="@+id/bai6"
@@ -59,7 +59,7 @@
         android:layout_below="@id/bai5"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"
-        android:text="Bai 6" />
+        android:text="bt-img" />
 
     <Button
         android:id="@+id/run"
@@ -136,5 +136,15 @@
         android:layout_marginTop="8dp"
         android:layout_toRightOf="@id/bai1"
         android:background="@drawable/custom_button"
-        android:text="Drawable" />
+        android:text="Menu" />
+    <Button
+        android:id="@+id/menuPopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menuDemo"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/bai1"
+        android:background="@drawable/custom_button"
+        android:text="Popup" />
 </RelativeLayout>
