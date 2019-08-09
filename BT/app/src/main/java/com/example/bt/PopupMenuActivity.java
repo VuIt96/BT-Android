@@ -32,8 +32,6 @@ public class PopupMenuActivity extends AppCompatActivity {
             }
         });
         registerForContextMenu(btConTextMenu);
-
-
     }
 
     @Override
@@ -41,7 +39,7 @@ public class PopupMenuActivity extends AppCompatActivity {
 
         getMenuInflater().inflate(R.menu.menudemo, menu);
         menu.setHeaderIcon(R.mipmap.ic_launcher);
-        menu.setHeaderTitle("Mau ");
+        menu.setHeaderTitle("Mau");
         super.onCreateContextMenu(menu, v, menuInfo);
     }
 

@@ -137,6 +137,7 @@
         android:layout_toRightOf="@id/bai1"
         android:background="@drawable/custom_button"
         android:text="Menu" />
+
     <Button
         android:id="@+id/menuPopup"
         android:layout_width="wrap_content"
@@ -147,4 +148,16 @@
         android:layout_toRightOf="@id/bai1"
         android:background="@drawable/custom_button"
         android:text="Popup" />
+
+    <Button
+        android:id="@+id/btDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menuPopup"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/bai1"
+        android:background="@drawable/custom_button"
+        android:text="Dialog" />
+
 </RelativeLayout>

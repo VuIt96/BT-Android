@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     Button BT5;
     Button BT6;
     Button mnDemo;
-    Button Popup;
+    Button Popup, btDialog;
 
 
     @Override
@@ -149,6 +149,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btDialog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, DialogActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void callID() {
@@ -167,5 +174,6 @@ public class MainActivity extends AppCompatActivity {
         BT6 = (Button) findViewById(R.id.bai6);
         mnDemo = (Button) findViewById(R.id.menuDemo);
         Popup = (Button) findViewById(R.id.menuPopup);
+        btDialog = (Button)findViewById(R.id.btDialog);
     }
 }
