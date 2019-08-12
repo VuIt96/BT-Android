@@ -1,9 +1,11 @@
-package com.example.bt;
+package com.example.bt.ex;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.example.bt.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

@@ -2,8 +2,10 @@ package com.example.bt;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -15,8 +17,10 @@ import com.example.bt.ListView.ImgView;
 import com.example.bt.ListView.ListView1;
 import com.example.bt.ex.App;
 import com.example.bt.ex.ButtonCustomActivity;
+import com.example.bt.ex.CalenderActivity;
 import com.example.bt.ex.CheckBox;
 import com.example.bt.ex.CheckWF;
+import com.example.bt.ex.DatePickerActivity;
 import com.example.bt.ex.DialogActivity;
 import com.example.bt.ex.DialogCustomActivity;
 import com.example.bt.ex.DrawbleActivity;
@@ -24,7 +28,9 @@ import com.example.bt.ex.MenuDemoActivity;
 import com.example.bt.ex.PopupMenuActivity;
 import com.example.bt.ex.ProBars;
 
-public class MainActivity extends AppCompatActivity {
+import java.io.Serializable;
+
+public class MainActivity extends Activity {
     Button Run;
     Button ProBar;
     Button EText;
@@ -39,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
     Button BT5;
     Button BT6;
     Button mnDemo;
-    Button Popup, btDialog, btDialogCT, btCalender;
+    Button Popup, btDialog, btDialogCT, btCalender, btDatePicker, btLifecycle;
 
 
     @Override
@@ -173,6 +179,76 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btDatePicker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, DatePickerActivity.class);
+                startActivity(intent);
+            }
+        });
+        btLifecycle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, LifecycleActivity.class);
+                String[] array = {"Android", "Ios", "PHP"};
+                intent.putExtra("Mang", array);
+                intent.putExtra("11", "noi dung");
+                intent.putExtra("name", 123345667);
+                StudientActivity studientActivity = new StudientActivity("Minh", 1990);
+                intent.putExtra("obj", studientActivity);
+                Bundle bundle = new Bundle();
+                bundle.putString("chuoi", "Chuoi hs");
+                bundle.putInt("so", 1234);
+                bundle.putStringArray("mangten", array);
+                bundle.putSerializable("objs",studientActivity );
+                intent.putExtra("data", bundle);
+
+                startActivity(intent);
+            }
+        });
+        Log.d("AAA", "onCreate Main");
+
+    }
+
+    public MainActivity() {
+        super();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("AAA", "onStart Main");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d("AAA", "onRestart Main");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d("AAA", "onResume Main");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("AAA", "onPause Main");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("AAA", "onStop Main");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("AAA", "onDestroy Main");
+
     }
 
     private void callID() {
@@ -194,5 +270,7 @@ public class MainActivity extends AppCompatActivity {
         btDialog = (Button) findViewById(R.id.btDialog);
         btDialogCT = (Button) findViewById(R.id.btDialogcustom);
         btCalender = (Button) findViewById(R.id.btCaleder);
+        btDatePicker = (Button) findViewById(R.id.btDatePicker);
+        btLifecycle = (Button) findViewById(R.id.btLifecycle);
     }
 }

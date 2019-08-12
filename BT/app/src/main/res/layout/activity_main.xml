@@ -182,4 +182,26 @@
         android:background="@drawable/custom_button"
         android:text="Caleder" />
 
+    <Button
+        android:id="@+id/btDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btCaleder"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/bai1"
+        android:background="@drawable/custom_button"
+        android:text="DatePic" />
+
+    <Button
+        android:id="@+id/btLifecycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btDatePicker"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/bai1"
+        android:background="@drawable/custom_button"
+        android:text="DatePic" />
+
 </RelativeLayout>

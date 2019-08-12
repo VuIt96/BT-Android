@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CalenderActivity"></activity>
+        <activity android:name=".LifecycleActivity"></activity>
+        <activity android:name=".ex.DatePickerActivity" />
+        <activity android:name=".ex.CalenderActivity" />
         <activity android:name=".ex.DialogCustomActivity" />
         <activity android:name=".ex.DialogActivity" />
         <activity android:name=".ex.PopupMenuActivity" />
