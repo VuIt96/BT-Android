@@ -1,11 +1,12 @@
-package com.example.bt;
+package com.example.bt.ex;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.bt.R;
 
 public class LifecycleActivity extends Activity {
     TextView txtNhan;

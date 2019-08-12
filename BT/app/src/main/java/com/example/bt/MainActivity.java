@@ -1,7 +1,5 @@
 package com.example.bt;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,6 +13,7 @@ import com.example.bt.GridView.GView2;
 import com.example.bt.GridView.GridView1;
 import com.example.bt.ListView.ImgView;
 import com.example.bt.ListView.ListView1;
+import com.example.bt.ex.ActionViewActivity;
 import com.example.bt.ex.App;
 import com.example.bt.ex.ButtonCustomActivity;
 import com.example.bt.ex.CalenderActivity;
@@ -24,11 +23,11 @@ import com.example.bt.ex.DatePickerActivity;
 import com.example.bt.ex.DialogActivity;
 import com.example.bt.ex.DialogCustomActivity;
 import com.example.bt.ex.DrawbleActivity;
+import com.example.bt.ex.LifecycleActivity;
 import com.example.bt.ex.MenuDemoActivity;
 import com.example.bt.ex.PopupMenuActivity;
 import com.example.bt.ex.ProBars;
-
-import java.io.Serializable;
+import com.example.bt.ex.StudientActivity;
 
 public class MainActivity extends Activity {
     Button Run;
@@ -45,7 +44,7 @@ public class MainActivity extends Activity {
     Button BT5;
     Button BT6;
     Button mnDemo;
-    Button Popup, btDialog, btDialogCT, btCalender, btDatePicker, btLifecycle;
+    Button Popup, btDialog, btDialogCT, btCalender, btDatePicker, btLifecycle, btActionView, btDataResult;
 
 
     @Override
@@ -200,13 +199,27 @@ public class MainActivity extends Activity {
                 bundle.putString("chuoi", "Chuoi hs");
                 bundle.putInt("so", 1234);
                 bundle.putStringArray("mangten", array);
-                bundle.putSerializable("objs",studientActivity );
+                bundle.putSerializable("objs", studientActivity);
                 intent.putExtra("data", bundle);
 
                 startActivity(intent);
             }
         });
-        Log.d("AAA", "onCreate Main");
+        btActionView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ActionViewActivity.class);
+                startActivity(intent);
+            }
+        });
+        btDataResult.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, DataResultActivity.class);
+                startActivity(intent);
+            }
+        });
+//        Log.d("AAA", "onCreate Main");
 
     }
 
@@ -272,5 +285,7 @@ public class MainActivity extends Activity {
         btCalender = (Button) findViewById(R.id.btCaleder);
         btDatePicker = (Button) findViewById(R.id.btDatePicker);
         btLifecycle = (Button) findViewById(R.id.btLifecycle);
+        btActionView = (Button) findViewById(R.id.btActionview);
+        btDataResult = (Button) findViewById(R.id.btDataResult);
     }
 }

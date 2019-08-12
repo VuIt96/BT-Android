@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bt">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LifecycleActivity"></activity>
+        <activity android:name=".IntentDataResultActivity"></activity>
+        <activity android:name=".DataResultActivity" />
+        <activity android:name=".ex.ActionViewActivity" />
+        <activity android:name=".ex.LifecycleActivity" />
         <activity android:name=".ex.DatePickerActivity" />
         <activity android:name=".ex.CalenderActivity" />
         <activity android:name=".ex.DialogCustomActivity" />

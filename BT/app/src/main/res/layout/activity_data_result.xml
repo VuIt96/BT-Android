@@ -4,17 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ex.LifecycleActivity">
+    tools:context=".DataResultActivity">
 
     <TextView
-        android:id="@+id/txtNhan"
-        android:layout_marginTop="32dp"
+        android:id="@+id/txtDataresult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ket qua"
-        android:textSize="24sp"
+        android:layout_marginTop="50dp"
+        android:text="CT CP ThinkLABs"
+        android:textColor="#1B8FC4"
+        android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btDataresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtDataresult" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

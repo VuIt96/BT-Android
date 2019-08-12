@@ -1,4 +1,4 @@
-package com.example.bt;
+package com.example.bt.ex;
 
 import java.io.Serializable;
 
