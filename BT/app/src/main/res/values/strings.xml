@@ -8,5 +8,16 @@
     <string name="txt_hello">Hello</string>
     <string name="txt_numberphone">Number phone</string>
     <string name="txt_Email">Email</string>
+    <string-array name="list_name">
+        <item>bird1</item>
+        <item>bird2</item>
+        <item>bird3</item>
+        <item>bird10</item>
+        <item>bird5</item>
+        <item>bird6</item>
+        <item>bird7</item>
+        <item>bird8</item>
+        <item>bird9</item>
+    </string-array>
 
 </resources>

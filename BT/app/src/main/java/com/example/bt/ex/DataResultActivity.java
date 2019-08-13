@@ -1,4 +1,4 @@
-package com.example.bt;
+package com.example.bt.ex;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.bt.R;
 
 public class DataResultActivity extends AppCompatActivity {
     Button btEdit;

@@ -19,10 +19,12 @@ import com.example.bt.ex.ButtonCustomActivity;
 import com.example.bt.ex.CalenderActivity;
 import com.example.bt.ex.CheckBox;
 import com.example.bt.ex.CheckWF;
+import com.example.bt.ex.DataResultActivity;
 import com.example.bt.ex.DatePickerActivity;
 import com.example.bt.ex.DialogActivity;
 import com.example.bt.ex.DialogCustomActivity;
 import com.example.bt.ex.DrawbleActivity;
+import com.example.bt.ex.IntentCameraActivity;
 import com.example.bt.ex.LifecycleActivity;
 import com.example.bt.ex.MenuDemoActivity;
 import com.example.bt.ex.PopupMenuActivity;
@@ -43,8 +45,8 @@ public class MainActivity extends Activity {
     Button BT4;
     Button BT5;
     Button BT6;
-    Button mnDemo;
-    Button Popup, btDialog, btDialogCT, btCalender, btDatePicker, btLifecycle, btActionView, btDataResult;
+    Button mnDemo, btIntentBt;
+    Button Popup, btDialog, btDialogCT, btCalender, btDatePicker, btLifecycle, btActionView, btDataResult, btIntentCamera;
 
 
     @Override
@@ -219,6 +221,20 @@ public class MainActivity extends Activity {
                 startActivity(intent);
             }
         });
+        btIntentCamera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, IntentCameraActivity.class);
+                startActivity(intent);
+            }
+        });
+        btIntentBt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, IntentExActivity.class);
+                startActivity(intent);
+            }
+        });
 //        Log.d("AAA", "onCreate Main");
 
     }
@@ -287,5 +303,7 @@ public class MainActivity extends Activity {
         btLifecycle = (Button) findViewById(R.id.btLifecycle);
         btActionView = (Button) findViewById(R.id.btActionview);
         btDataResult = (Button) findViewById(R.id.btDataResult);
+        btIntentCamera = (Button) findViewById(R.id.btIntentCamera);
+        btIntentBt = (Button) findViewById(R.id.btIntentBt);
     }
 }

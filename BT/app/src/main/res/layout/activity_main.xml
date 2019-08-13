@@ -62,6 +62,16 @@
         android:text="bt-img" />
 
     <Button
+        android:id="@+id/btIntentBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bai6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_button"
+        android:text="IntentBT" />
+
+    <Button
         android:id="@+id/run"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -225,5 +235,16 @@
         android:layout_toRightOf="@id/bai1"
         android:background="@drawable/custom_button"
         android:text="DataResult" />
+
+    <Button
+        android:id="@+id/btIntentCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btDataResult"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/bai1"
+        android:background="@drawable/custom_button"
+        android:text="IntCamera" />
 
 </RelativeLayout>
