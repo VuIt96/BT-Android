@@ -1,4 +1,4 @@
-package com.example.bt;
+package com.example.bt.IntenteEx;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,7 +8,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
-import android.widget.Toast;
+
+import com.example.bt.R;
 
 import java.util.Collections;
 

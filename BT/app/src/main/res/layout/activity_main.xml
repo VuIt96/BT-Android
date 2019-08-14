@@ -72,6 +72,46 @@
         android:text="IntentBT" />
 
     <Button
+        android:id="@+id/btAnimationAlpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btIntentBt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_button"
+        android:text="Animation" />
+
+    <Button
+        android:id="@+id/btAsyncTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btAnimationAlpha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_button"
+        android:text="AsyncTask" />
+
+    <Button
+        android:id="@+id/btLoadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btAsyncTask"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_button"
+        android:text="LoadImage" />
+
+    <Button
+        android:id="@+id/btReadContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btLoadImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_button"
+        android:text="ReadContent" />
+
+    <Button
         android:id="@+id/run"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -127,6 +167,36 @@
         android:layout_marginTop="8dp"
         android:background="@drawable/custom_button"
         android:text="App" />
+
+    <Button
+        android:id="@+id/btReadRss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_button"
+        android:text="ReadRss" />
+
+    <Button
+        android:id="@+id/btJsonObject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btReadRss"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_button"
+        android:text="JsonOb" />
+
+    <Button
+        android:id="@+id/btJsonLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btJsonObject"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_button"
+        android:text="Language" />
 
     <Button
         android:id="@+id/sheapselect"

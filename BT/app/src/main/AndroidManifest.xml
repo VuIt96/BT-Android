@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.bt">
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.CAMERA" />
 
@@ -13,10 +14,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".jSONLanguageActivity"></activity>
+        <activity android:name=".JsonObjectActivity" />
+        <activity android:name=".News.ReadNewActivity" />
+        <activity android:name=".News.ReadRssActivity" />
+        <activity android:name=".AsyncTask.ReadContentActivity" />
+        <activity android:name=".AsyncTask.LoadImageActivity" />
+        <activity android:name=".AsyncTask.AsyncTaskActivity" />
+        <activity android:name=".AnimationIntent.AnimationIntentActivity" />
+        <activity android:name=".AnimationIntent.AnimationAlphaActivity" />
         <activity
-            android:name=".ImageIntentActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.Dialog"></activity>
-        <activity android:name=".IntentExActivity" />
+            android:name=".IntenteEx.ImageIntentActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog" />
+        <activity android:name=".IntenteEx.IntentExActivity" />
         <activity android:name=".ex.IntentCameraActivity" />
         <activity android:name=".ex.IntentDataResultActivity" />
         <activity android:name=".ex.DataResultActivity" />

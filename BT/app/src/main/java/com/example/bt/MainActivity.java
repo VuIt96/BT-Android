@@ -7,12 +7,18 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.bt.AnimationIntent.AnimationAlphaActivity;
+import com.example.bt.AsyncTask.AsyncTaskActivity;
+import com.example.bt.AsyncTask.LoadImageActivity;
+import com.example.bt.AsyncTask.ReadContentActivity;
 import com.example.bt.CustomListView.custum;
 import com.example.bt.GridView.EditText;
 import com.example.bt.GridView.GView2;
 import com.example.bt.GridView.GridView1;
+import com.example.bt.IntenteEx.IntentExActivity;
 import com.example.bt.ListView.ImgView;
 import com.example.bt.ListView.ListView1;
+import com.example.bt.News.ReadRssActivity;
 import com.example.bt.ex.ActionViewActivity;
 import com.example.bt.ex.App;
 import com.example.bt.ex.ButtonCustomActivity;
@@ -44,8 +50,8 @@ public class MainActivity extends Activity {
     Button BT3;
     Button BT4;
     Button BT5;
-    Button BT6;
-    Button mnDemo, btIntentBt;
+    Button BT6, btJsonLanguage;
+    Button mnDemo, btIntentBt, btAnimationAlpha, btAsyncTask, btLoadImage, btReadContent, btReadRss, btJsonObject;
     Button Popup, btDialog, btDialogCT, btCalender, btDatePicker, btLifecycle, btActionView, btDataResult, btIntentCamera;
 
 
@@ -235,6 +241,55 @@ public class MainActivity extends Activity {
                 startActivity(intent);
             }
         });
+        btAnimationAlpha.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, AnimationAlphaActivity.class);
+                startActivity(intent);
+            }
+        });
+        btAsyncTask.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, AsyncTaskActivity.class);
+                startActivity(intent);
+            }
+        });
+        btLoadImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, LoadImageActivity.class);
+                startActivity(intent);
+            }
+        });
+        btReadContent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ReadContentActivity.class);
+                startActivity(intent);
+            }
+        });
+        btReadRss.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ReadRssActivity.class);
+                startActivity(intent);
+            }
+        });
+        btJsonObject.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, JsonObjectActivity.class);
+                startActivity(intent);
+            }
+        });
+        btJsonLanguage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, jSONLanguageActivity.class);
+                startActivity(intent);
+            }
+        });
 //        Log.d("AAA", "onCreate Main");
 
     }
@@ -305,5 +360,12 @@ public class MainActivity extends Activity {
         btDataResult = (Button) findViewById(R.id.btDataResult);
         btIntentCamera = (Button) findViewById(R.id.btIntentCamera);
         btIntentBt = (Button) findViewById(R.id.btIntentBt);
+        btAnimationAlpha = (Button) findViewById(R.id.btAnimationAlpha);
+        btAsyncTask = (Button) findViewById(R.id.btAsyncTask);
+        btLoadImage = (Button) findViewById(R.id.btLoadImage);
+        btReadContent = (Button) findViewById(R.id.btReadContent);
+        btReadRss = (Button) findViewById(R.id.btReadRss);
+        btJsonObject = (Button) findViewById(R.id.btJsonObject);
+        btJsonLanguage = (Button) findViewById(R.id.btJsonLanguage);
     }
 }

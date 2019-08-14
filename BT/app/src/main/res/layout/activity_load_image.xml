@@ -4,41 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="4dp"
-    tools:context=".IntenteEx.IntentExActivity">
+    tools:context=".AsyncTask.LoadImageActivity">
 
-    <ImageView
-        android:id="@+id/imgBird1"
+    <Button
+        android:id="@+id/btLoadImg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:src="@drawable/bird1"
+        android:text="Load"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/txtChon"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:background="#03A9F4"
-        android:gravity="center"
-        android:text="Chọn hình phía dưới"
-        android:textColor="#F44336"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imgBird1" />
-
     <ImageView
-        android:id="@+id/imgBird2"
+        android:id="@+id/imgLoadImg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:src="@drawable/question"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtChon" />
+        app:layout_constraintTop_toBottomOf="@id/btLoadImg" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

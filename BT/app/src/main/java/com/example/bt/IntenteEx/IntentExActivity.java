@@ -1,4 +1,4 @@
-package com.example.bt;
+package com.example.bt.IntenteEx;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.example.bt.R;
 
 import java.util.ArrayList;
 import java.util.Arrays;
