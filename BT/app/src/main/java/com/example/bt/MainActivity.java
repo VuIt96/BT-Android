@@ -16,6 +16,8 @@ import com.example.bt.GridView.EditText;
 import com.example.bt.GridView.GView2;
 import com.example.bt.GridView.GridView1;
 import com.example.bt.IntenteEx.IntentExActivity;
+import com.example.bt.JSON.JsonObjectActivity;
+import com.example.bt.JSON.jSONLanguageActivity;
 import com.example.bt.ListView.ImgView;
 import com.example.bt.ListView.ListView1;
 import com.example.bt.News.ReadRssActivity;
@@ -50,7 +52,7 @@ public class MainActivity extends Activity {
     Button BT3;
     Button BT4;
     Button BT5;
-    Button BT6, btJsonLanguage;
+    Button BT6, btJsonLanguage, btVolley;
     Button mnDemo, btIntentBt, btAnimationAlpha, btAsyncTask, btLoadImage, btReadContent, btReadRss, btJsonObject;
     Button Popup, btDialog, btDialogCT, btCalender, btDatePicker, btLifecycle, btActionView, btDataResult, btIntentCamera;
 
@@ -290,6 +292,13 @@ public class MainActivity extends Activity {
                 startActivity(intent);
             }
         });
+        btVolley.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, VolleyStringActivity.class);
+                startActivity(intent);
+            }
+        });
 //        Log.d("AAA", "onCreate Main");
 
     }
@@ -367,5 +376,6 @@ public class MainActivity extends Activity {
         btReadRss = (Button) findViewById(R.id.btReadRss);
         btJsonObject = (Button) findViewById(R.id.btJsonObject);
         btJsonLanguage = (Button) findViewById(R.id.btJsonLanguage);
+        btVolley = (Button) findViewById(R.id.btVolleyString);
     }
 }

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".jSONLanguageActivity">
+    android:layout_marginTop="4dp"
+    tools:context=".JSON.jSONLanguageActivity">
 
     <ImageView
         android:id="@+id/imgEnglish"
@@ -32,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:textColor="#2F87AF"
-        android:textSize="24sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

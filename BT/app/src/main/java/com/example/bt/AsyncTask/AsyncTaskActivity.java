@@ -19,16 +19,17 @@ public class AsyncTaskActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_async_task);
         btAsyncTask = (Button) findViewById(R.id.btAsyncTask);
-        txtInfor = (TextView) findViewById(R.id.txtInfor);
         btAsyncTask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new CongViec().execute();
+                new WorkTask().execute();
             }
         });
+        txtInfor = (TextView) findViewById(R.id.txtInfor);
     }
 
-    private class CongViec extends AsyncTask<Void, String, String> {
+    private class WorkTask extends AsyncTask<Void, Integer, String> {
+
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
@@ -44,7 +45,7 @@ public class AsyncTaskActivity extends AppCompatActivity {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                publishProgress("Xong viec " + i +" \n");
+                publishProgress(i);
             }
             return "xong roi.\n";
         }
@@ -56,9 +57,9 @@ public class AsyncTaskActivity extends AppCompatActivity {
         }
 
         @Override
-        protected void onProgressUpdate(String... values) {
+        protected void onProgressUpdate(Integer... values) {
             super.onProgressUpdate(values);
-            txtInfor.append(values[0]);
+            txtInfor.append("xong cv: " + values[0] + "\n");
         }
     }
 }
