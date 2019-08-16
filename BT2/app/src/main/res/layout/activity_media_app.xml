@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".AppMusic.MediaAppActivity">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Tên bài hát: "
+        android:textColor="#fff"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="241dp"
+        android:layout_height="257dp"
+        android:layout_below="@id/txtName"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/iconcd" />
+
+    <SeekBar
+        android:id="@+id/sbPlay"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp" />
+
+    <TextView
+        android:id="@+id/txtTimeMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="430dp"
+        android:text="00:00"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/txtTimeMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="430dp"
+        android:layout_marginRight="20dp"
+        android:text="00:00"
+        android:textColor="#fff" />
+
+    <ImageButton
+        android:id="@+id/iconPrevious"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="500dp"
+        android:src="@drawable/ic_skip_previous_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/iconPlay"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="500dp"
+        android:layout_toRightOf="@id/iconPrevious"
+        android:src="@drawable/ic_play_circle_outline_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/iconStop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="500dp"
+        android:layout_toRightOf="@id/iconPlay"
+        android:src="@drawable/ic_stop_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/iconNext"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="500dp"
+        android:layout_toRightOf="@id/iconStop"
+        android:src="@drawable/ic_skip_next_black_24dp" />
+
+</RelativeLayout>
