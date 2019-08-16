@@ -1,4 +1,4 @@
-package com.example.bt;
+package com.example.bt.VolleuActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,8 +12,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-
-import java.lang.reflect.Method;
+import com.example.bt.R;
 
 public class VolleyStringActivity extends AppCompatActivity {
 

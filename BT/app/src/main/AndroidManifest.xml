@@ -14,7 +14,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".VolleyStringActivity"></activity>
+        <activity android:name=".VolleuActivity.JsonArrayActivity"></activity>
+        <activity android:name=".VolleuActivity.VolleyJsonActivity" />
+        <activity android:name=".VolleuActivity.VolleyStringActivity" />
         <activity android:name=".JSON.jSONLanguageActivity" />
         <activity android:name=".JSON.JsonObjectActivity" />
         <activity android:name=".News.ReadNewActivity" />

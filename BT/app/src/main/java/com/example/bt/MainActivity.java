@@ -21,6 +21,9 @@ import com.example.bt.JSON.jSONLanguageActivity;
 import com.example.bt.ListView.ImgView;
 import com.example.bt.ListView.ListView1;
 import com.example.bt.News.ReadRssActivity;
+import com.example.bt.VolleuActivity.JsonArrayActivity;
+import com.example.bt.VolleuActivity.VolleyJsonActivity;
+import com.example.bt.VolleuActivity.VolleyStringActivity;
 import com.example.bt.ex.ActionViewActivity;
 import com.example.bt.ex.App;
 import com.example.bt.ex.ButtonCustomActivity;
@@ -52,7 +55,7 @@ public class MainActivity extends Activity {
     Button BT3;
     Button BT4;
     Button BT5;
-    Button BT6, btJsonLanguage, btVolley;
+    Button BT6, btJsonLanguage, btVolley, btVolleyJSon, btVolleyJsonArray;
     Button mnDemo, btIntentBt, btAnimationAlpha, btAsyncTask, btLoadImage, btReadContent, btReadRss, btJsonObject;
     Button Popup, btDialog, btDialogCT, btCalender, btDatePicker, btLifecycle, btActionView, btDataResult, btIntentCamera;
 
@@ -299,6 +302,20 @@ public class MainActivity extends Activity {
                 startActivity(intent);
             }
         });
+        btVolleyJSon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, VolleyJsonActivity.class);
+                startActivity(intent);
+            }
+        });
+        btVolleyJsonArray.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, JsonArrayActivity.class);
+                startActivity(intent);
+            }
+        });
 //        Log.d("AAA", "onCreate Main");
 
     }
@@ -377,5 +394,7 @@ public class MainActivity extends Activity {
         btJsonObject = (Button) findViewById(R.id.btJsonObject);
         btJsonLanguage = (Button) findViewById(R.id.btJsonLanguage);
         btVolley = (Button) findViewById(R.id.btVolleyString);
+        btVolleyJSon = (Button) findViewById(R.id.btVolleyJson);
+        btVolleyJsonArray = (Button) findViewById(R.id.btVolleyJsonArray);
     }
 }

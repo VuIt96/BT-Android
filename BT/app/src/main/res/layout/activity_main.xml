@@ -209,6 +209,26 @@
         android:text="Volley" />
 
     <Button
+        android:id="@+id/btVolleyJson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btVolleyString"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_button"
+        android:text="VolleyJson" />
+
+    <Button
+        android:id="@+id/btVolleyJsonArray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btVolleyString"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_button"
+        android:text="JsonArray" />
+
+    <Button
         android:id="@+id/sheapselect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -326,5 +346,4 @@
         android:layout_toRightOf="@id/bai1"
         android:background="@drawable/custom_button"
         android:text="IntCamera" />
-
 </RelativeLayout>
