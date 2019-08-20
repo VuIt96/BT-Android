@@ -1,4 +1,4 @@
-package com.example.bt2;
+package com.example.bt2.SQLImg;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -10,7 +10,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.bt2.DoVat;
+import com.example.bt2.R;
 
 import java.util.List;
 
@@ -63,6 +63,7 @@ public class AdapterObjects extends BaseAdapter {
         DoVat doVat = doVatList.get(i);
         viewHolder.txtNameCustom.setText(doVat.getTen());
         viewHolder.txtNameCustom.setText(doVat.getMota());
+        //chuyen byte sang bitmap
         byte[] hinhanh = doVat.getHinh();
         Bitmap bitmap = BitmapFactory.decodeByteArray(hinhanh, 0, hinhanh.length);
         viewHolder.imgCustom.setImageBitmap(bitmap);

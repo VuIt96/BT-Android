@@ -9,10 +9,11 @@ import android.widget.Button;
 
 import com.example.bt2.AppMusic.MediaAppActivity;
 import com.example.bt2.Media.MediaSoundActivity;
+import com.example.bt2.SQLImg.SQLImageActivity;
 import com.example.bt2.SQLTask.SQLiteListActivity;
 
 public class MainActivity extends AppCompatActivity {
-    Button btMediaSound, btMediaApp, btSQLine, btSQLImg;
+    Button btMediaSound, btMediaApp, btSQLine, btSQLImg, btFragmentCreate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +53,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btFragmentCreate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, FragmentCreateActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void initEvent() {
@@ -59,5 +67,6 @@ public class MainActivity extends AppCompatActivity {
         btMediaApp = (Button) findViewById(R.id.btMediaApp);
         btSQLine = (Button) findViewById(R.id.btSQLineList);
         btSQLImg = (Button) findViewById(R.id.btSQLineImg);
+        btFragmentCreate = (Button) findViewById(R.id.btFragmentCreate);
     }
 }

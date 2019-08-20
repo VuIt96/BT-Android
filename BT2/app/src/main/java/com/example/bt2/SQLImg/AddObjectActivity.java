@@ -1,4 +1,4 @@
-package com.example.bt2;
+package com.example.bt2.SQLImg;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,7 +17,8 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import java.io.ByteArrayInputStream;
+import com.example.bt2.R;
+
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
@@ -63,6 +64,12 @@ public class AddObjectActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                 startActivityForResult(intent, REQUEST_CODE_CAMERA);
+//                ActivityCompat.requestPermissions(
+//                        AddObjectActivity.this,
+//                        new String[]{Manifest.permission.CAMERA},
+//                        REQUEST_CODE_CAMERA
+//                );
+
             }
         });
         imgFolder.setOnClickListener(new View.OnClickListener() {

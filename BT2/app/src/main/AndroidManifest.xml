@@ -12,8 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddObjectActivity"></activity>
-        <activity android:name=".SQLImageActivity" />
+        <activity android:name=".FragmentCreateActivity"></activity>
+        <activity android:name=".SQLImg.AddObjectActivity" />
+        <activity android:name=".SQLImg.SQLImageActivity" />
         <activity android:name=".SQLTask.SQLiteListActivity" />
         <activity android:name=".AppMusic.MediaAppActivity" />
         <activity android:name=".Media.MediaSoundActivity" />

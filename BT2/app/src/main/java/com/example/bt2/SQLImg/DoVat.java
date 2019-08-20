@@ -1,4 +1,4 @@
-package com.example.bt2;
+package com.example.bt2.SQLImg;
 
 public class DoVat {
     private int Id;

@@ -1,4 +1,4 @@
-package com.example.bt2;
+package com.example.bt2.SQLImg;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -25,7 +25,7 @@ public class DataBaseImage extends SQLiteOpenHelper {
     // do vat can sua
     public void InsertObject(String Name, String Mota, byte[] img) {
         SQLiteDatabase sqLiteDatabase = getWritableDatabase();
-        String sql = "INSERT INTO DoVat VALUES(null, ?, ?, ?)";
+        String sql = "INSERT INTO Dovat VALUES(null, ?, ?, ?)";
         SQLiteStatement sqLiteStatement = sqLiteDatabase.compileStatement(sql);
         sqLiteStatement.clearBindings();
 
