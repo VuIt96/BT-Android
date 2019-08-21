@@ -4,6 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentCreateActivity">
+    android:background="#3F51B5"
+    tools:context=".FragmentXMl.FragmentCreateActivity">
+
+    <TextView
+        android:id="@+id/txtFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Fragment"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.example.bt2.FragmentXMl.FragmentOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtFragment" />
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.bt2.FragmentXMl.FragmentTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment" />
+
+    <Button
+        android:onClick="AddFrag"
+        android:id="@+id/btFragA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FragA"
+        app:layout_constraintEnd_toStartOf="@id/btFragAddB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment2" />
+
+    <Button
+        android:onClick="AddFrag"
+        android:id="@+id/btFragAddB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FragB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btFragA"
+        app:layout_constraintTop_toBottomOf="@id/fragment2" />
+
+    <FrameLayout
+        android:id="@+id/Framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/btFragA">
+
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

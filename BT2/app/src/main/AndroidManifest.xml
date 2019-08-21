@@ -12,7 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FragmentCreateActivity"></activity>
+        <activity android:name=".FragmentDialogActivity"></activity>
+        <activity android:name=".FragmentListActivity" />
+        <activity android:name=".FragmentRemove.FragmentRemoveActivity" />
+        <activity android:name=".FragmentSendReceive.FragSendReceiveActivity" />
+        <activity android:name=".FragmentOnClick.FragmentOnclickActivity" />
+        <activity android:name=".FragmentXMl.FragmentCreateActivity" />
         <activity android:name=".SQLImg.AddObjectActivity" />
         <activity android:name=".SQLImg.SQLImageActivity" />
         <activity android:name=".SQLTask.SQLiteListActivity" />
