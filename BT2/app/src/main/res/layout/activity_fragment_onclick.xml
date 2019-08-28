@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#00BCD4"
     android:padding="4dp"
-    tools:context=".FragmentOnClick.FragmentOnclickActivity">
+    tools:context=".fragmentonclick.FragmentOnclickActivity">
 
     <TextView
         android:id="@+id/txtHello"
@@ -31,7 +31,7 @@
 
     <fragment
         android:id="@+id/fragOnclick1"
-        android:name="com.example.bt2.FragmentOnClick.FragmentOnCLickOne"
+        android:name="com.example.bt2.fragmentonclick.FragmentOnCLickOne"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -39,7 +39,7 @@
 
     <fragment
         android:id="@+id/fragOnclik2"
-        android:name="com.example.bt2.FragmentOnClick.FragmentOnClickTwo"
+        android:name="com.example.bt2.fragmentonclick.FragmentOnClickTwo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"

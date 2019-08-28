@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtNameInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ho ten"
+        android:textColor="#ff00"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtYearofBirtInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nam sinh"
+        android:textColor="#9C27B0"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtAddressInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dia chi"
+        android:textColor="#FF9800"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtEmailInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email"
+        android:textColor="#FF5722"
+        android:textSize="20dp" />
+</LinearLayout>

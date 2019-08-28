@@ -2,9 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bt2">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,17 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FragmentDialogActivity"></activity>
-        <activity android:name=".FragmentListActivity" />
-        <activity android:name=".FragmentRemove.FragmentRemoveActivity" />
-        <activity android:name=".FragmentSendReceive.FragSendReceiveActivity" />
-        <activity android:name=".FragmentOnClick.FragmentOnclickActivity" />
-        <activity android:name=".FragmentXMl.FragmentCreateActivity" />
-        <activity android:name=".SQLImg.AddObjectActivity" />
-        <activity android:name=".SQLImg.SQLImageActivity" />
-        <activity android:name=".SQLTask.SQLiteListActivity" />
-        <activity android:name=".AppMusic.MediaAppActivity" />
-        <activity android:name=".Media.MediaSoundActivity" />
+        <activity android:name=".AdmobFirebaseActivity"></activity>
+        <activity android:name=".GoogleMapActivity" />
+        <activity
+            android:name=".videolist.PlayVideoListActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".videolist.YoutubeListActivity" />
+        <activity android:name=".videolist.YoutubeApiActivity" />
+        <activity android:name=".fragmentstudient.StudientInfomation" />
+        <activity android:name=".fragmentstudient.FragmentDisplayActivity" />
+        <activity android:name=".fragmentdialoglist.FragmentDialogActivity" />
+        <activity android:name=".fragmentdialoglist.FragmentListActivity" />
+        <activity android:name=".fragmentremove.FragmentRemoveActivity" />
+        <activity android:name=".fragmentsendreceive.FragSendReceiveActivity" />
+        <activity android:name=".fragmentonclick.FragmentOnclickActivity" />
+        <activity android:name=".fragmentxml.FragmentCreateActivity" />
+        <activity android:name=".sqlimg.AddObjectActivity" />
+        <activity android:name=".sqlimg.SQLImageActivity" />
+        <activity android:name=".sqltask.SQLiteListActivity" />
+        <activity android:name=".appmusic.MediaAppActivity" />
+        <activity android:name=".media.MediaSoundActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,6 +36,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_api_key" />
     </application>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

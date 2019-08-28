@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="4dp"
-    tools:context=".FragmentSendReceive.FragSendReceiveActivity">
+    tools:context=".fragmentsendreceive.FragSendReceiveActivity">
 
     <TextView
         android:id="@+id/txtSendReceive"

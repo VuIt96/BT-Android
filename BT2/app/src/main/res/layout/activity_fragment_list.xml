@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentListActivity">
+    tools:context=".fragmentdialoglist.FragmentListActivity">
 
     <fragment
         android:id="@+id/fragmentList"
-        android:name="com.example.bt2.FragmentList"
+        android:name="com.example.bt2.fragmentdialoglist.FragmentList"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

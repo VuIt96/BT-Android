@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#3F51B5"
-    tools:context=".FragmentXMl.FragmentCreateActivity">
+    tools:context=".fragmentxml.FragmentCreateActivity">
 
     <TextView
         android:id="@+id/txtFragment"
@@ -21,7 +21,7 @@
 
     <fragment
         android:id="@+id/fragment"
-        android:name="com.example.bt2.FragmentXMl.FragmentOne"
+        android:name="com.example.bt2.fragmentxml.FragmentOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,7 +30,7 @@
 
     <fragment
         android:id="@+id/fragment2"
-        android:name="com.example.bt2.FragmentXMl.FragmentTwo"
+        android:name="com.example.bt2.fragmentxml.FragmentTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"

@@ -7,18 +7,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.bt2.AppMusic.MediaAppActivity;
-import com.example.bt2.FragmentOnClick.FragmentOnclickActivity;
-import com.example.bt2.FragmentRemove.FragmentRemoveActivity;
-import com.example.bt2.FragmentSendReceive.FragSendReceiveActivity;
-import com.example.bt2.FragmentXMl.FragmentCreateActivity;
-import com.example.bt2.Media.MediaSoundActivity;
-import com.example.bt2.SQLImg.SQLImageActivity;
-import com.example.bt2.SQLTask.SQLiteListActivity;
+import com.example.bt2.appmusic.MediaAppActivity;
+import com.example.bt2.fragmentdialoglist.FragmentDialogActivity;
+import com.example.bt2.fragmentdialoglist.FragmentListActivity;
+import com.example.bt2.fragmentonclick.FragmentOnclickActivity;
+import com.example.bt2.fragmentremove.FragmentRemoveActivity;
+import com.example.bt2.fragmentsendreceive.FragSendReceiveActivity;
+import com.example.bt2.fragmentstudient.FragmentDisplayActivity;
+import com.example.bt2.fragmentxml.FragmentCreateActivity;
+import com.example.bt2.media.MediaSoundActivity;
+import com.example.bt2.sqlimg.SQLImageActivity;
+import com.example.bt2.sqltask.SQLiteListActivity;
+import com.example.bt2.videolist.YoutubeApiActivity;
+import com.example.bt2.videolist.YoutubeListActivity;
 
 public class MainActivity extends AppCompatActivity {
     Button btMediaSound, btMediaApp, btSQLine, btSQLImg, btFragmentCreate, btFrag0nClick,
-            btFragSend, btFragRemove, btFragList, btFragmentDialog;
+            btFragSend, btFragRemove, btFragList, btFragmentDialog, btFragmentList, btYoutubeApi,
+            btYoutubeListApi, btMapApi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,6 +106,34 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btFragmentList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, FragmentDisplayActivity.class);
+                startActivity(intent);
+            }
+        });
+        btYoutubeApi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, YoutubeApiActivity.class);
+                startActivity(intent);
+            }
+        });
+        btYoutubeListApi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, YoutubeListActivity.class);
+                startActivity(intent);
+            }
+        });
+        btMapApi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, GoogleMapActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void initEvent() {
@@ -113,5 +147,9 @@ public class MainActivity extends AppCompatActivity {
         btFragRemove = (Button) findViewById(R.id.btFragRemove);
         btFragList = (Button) findViewById(R.id.btFragList);
         btFragmentDialog = (Button) findViewById(R.id.btFragmentDialog);
+        btFragmentList = (Button) findViewById(R.id.btFragmentList);
+        btYoutubeApi = (Button) findViewById(R.id.btYoutubeApi);
+        btYoutubeListApi = (Button) findViewById(R.id.btYoutubeListApi);
+        btMapApi = (Button) findViewById(R.id.btMapApi);
     }
 }
