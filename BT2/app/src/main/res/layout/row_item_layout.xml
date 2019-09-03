@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp">
+
+    <ImageView
+        android:id="@+id/imgCourse"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_margin="4dp" />
+
+    <TextView
+        android:id="@+id/txtNameCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/imgCourse"
+        android:text="Ten khoa hoc"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtPriceCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNameCourse"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/imgCourse"
+        android:text="Ten khoa hoc"
+        android:textColor="#8BC34A"
+        android:textSize="24sp" />
+</RelativeLayout>

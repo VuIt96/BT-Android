@@ -24,7 +24,7 @@ import com.example.bt2.videolist.YoutubeListActivity;
 public class MainActivity extends AppCompatActivity {
     Button btMediaSound, btMediaApp, btSQLine, btSQLImg, btFragmentCreate, btFrag0nClick,
             btFragSend, btFragRemove, btFragList, btFragmentDialog, btFragmentList, btYoutubeApi,
-            btYoutubeListApi, btMapApi;
+            btYoutubeListApi, btMapApi, btAdmob, btAsynTaskVolley, btHappy;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -134,6 +134,27 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btAdmob.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, AdmobFirebaseActivity.class);
+                startActivity(intent);
+            }
+        });
+        btAsynTaskVolley.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, AsynTaskVolleyActivity.class);
+                startActivity(intent);
+            }
+        });
+        btHappy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, HappyActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void initEvent() {
@@ -151,5 +172,8 @@ public class MainActivity extends AppCompatActivity {
         btYoutubeApi = (Button) findViewById(R.id.btYoutubeApi);
         btYoutubeListApi = (Button) findViewById(R.id.btYoutubeListApi);
         btMapApi = (Button) findViewById(R.id.btMapApi);
+        btAdmob = (Button) findViewById(R.id.btAdmob);
+        btAsynTaskVolley = (Button) findViewById(R.id.btAsynTaskVolley);
+        btHappy = (Button) findViewById(R.id.btHappy);
     }
 }
